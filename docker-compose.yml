@@ -1,0 +1,11 @@
+services:
+  app: 
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: app-labs-vuejs
+    volumes:
+      - ./:/app
+      - app/node_modules
+    ports:
+      - "80:80"
