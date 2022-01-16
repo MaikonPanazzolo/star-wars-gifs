@@ -107,6 +107,7 @@ export default {
                 name: this.hero.title,
                 url: this.hero.url,
                 id: this.hero.id,
+                hero: this.hero
             },
         }
     },
@@ -144,12 +145,14 @@ export default {
                     title: this.selectedHeroes[this.hero.id].title,
                     url: this.selectedHeroes[this.hero.id].url,
                     id: this.selectedHeroes[this.hero.id].id,
+                    hero: this.hero,
                 };
             } else {
                 this.modalSave = {
                     title: this.hero.title,
                     url: this.hero.url,
                     id: this.hero.id,
+                    hero: this.hero,
                 };
             }
 
